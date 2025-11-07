@@ -9,8 +9,35 @@
 /*   Updated: 2025/11/07 18:32:11 by evarache         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+#include<stdio.h>
+#include <string.h>
 
 void ft_bzero(void *s, size_t n)
 {
-	
+	unsigned char	*p;
+
+	p = s;
+	while (n > 0)
+	{
+		*p = 0;
+		p++;
+		n--;
+	}
 }
+
+
+int main(void)
+{
+    char str[10];
+
+    ft_bzero(str, 0);
+	printf("Mon resultat : %s\n", str);  // Affiche "AAAAA"
+	bzero(str, 0);
+
+    printf("Resultat : %s\n", str);  // Affiche "AAAAA"
+    return 0;
+}
+
+
+//Verifier pour le cas où n = 0, la fonction native ne compile pas
+//Idem pour ft_memset
