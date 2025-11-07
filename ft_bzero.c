@@ -28,13 +28,13 @@ void ft_bzero(void *s, size_t n)
 
 int main(void)
 {
-    char str[10];
+    char str[10] = "loutre";
 
-    ft_bzero(str, 0);
-	printf("Mon resultat : %s\n", str);  // Affiche "AAAAA"
-	bzero(str, 0);
+    ft_bzero(str, 3);
+	printf("Mon resultat : %s\n", str);  
+	bzero(str, 3);
 
-    printf("Resultat : %s\n", str);  // Affiche "AAAAA"
+    printf("Resultat : %s\n", str);  
     return 0;
 }
 
