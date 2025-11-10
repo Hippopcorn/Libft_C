@@ -37,7 +37,3 @@ int main(void)
     printf("Resultat : %s\n", str);  
     return 0;
 }
-
-
-//Verifier pour le cas où n = 0, la fonction native ne compile pas
-//Idem pour ft_memset
