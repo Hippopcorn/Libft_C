@@ -25,7 +25,7 @@ int	ft_strlen(char *src)
 	return (length_src);
 }*/
 
-unsigned int	ft_strlcpy(char *dest, const char *src, size_t size)
+unsigned int	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	unsigned int	i;
 	char			*src_cast;
@@ -36,10 +36,10 @@ unsigned int	ft_strlcpy(char *dest, const char *src, size_t size)
 	{
 		while ((src_cast[i] != '\0') && (i < (size - 1)))
 		{
-			dest[i] = src_cast[i];
+			dst[i] = src_cast[i];
 			i++;
 		}
-		dest[i] = '\0';
+		dst[i] = '\0';
 		while (src_cast[i] != '\0')
 		{
 			i++;
@@ -56,10 +56,10 @@ int     main()
         char    str_dest2[] = "Panthere";
 
         printf("Ma fonction : taille de src =  %u caracteres\n",
-        ft_strlcpy(str_dest, str_src, 8));
+        ft_strlcpy(str_dest, str_src, 3));
 		printf ("src : %s, dest : %s\n", str_src, str_dest);
         printf("fonction officielle : taille de src = %zu caracteres\n",
-        strlcpy(str_dest2, str_src2, 8));
+        strlcpy(str_dest2, str_src2, 3));
 		printf ("src2 : %s, dest2 : %s\n", str_src2, str_dest2);
         return (0);
 }*/
