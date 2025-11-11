@@ -6,7 +6,7 @@
 /*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 20:37:52 by elsa              #+#    #+#             */
-/*   Updated: 2025/11/11 10:04:22 by elsa             ###   ########.fr       */
+/*   Updated: 2025/11/11 16:08:52 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void    *calloc(size_t count, size_t size)
     
     i = 0;
     mem = malloc(count * size);
+    if (!mem)
+        return (NULL);
     while (i < count)
     {
         mem[i] = 0;
