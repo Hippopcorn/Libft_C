@@ -38,5 +38,8 @@ int	ft_get_index_end(char const *s1, char const *set);
 
 int ft_count_split(char const *s, char c);
 int ft_count_char(char const *s, char c, int i);
+char	**ft_split(char const *s, char c);
+
+int	ft_size(int n);
 
 #endif
