@@ -6,7 +6,7 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 17:14:20 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 12:05:49 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/13 16:13:16 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memset( void *s, int c, size_t n)
 {
 	unsigned char	*p;
 
-	p = (unsigned char*)s;
+	p = (unsigned char *)s;
 	while (n > 0)
 	{
 		*p = c;
