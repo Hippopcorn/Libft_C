@@ -6,11 +6,11 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 11:17:22 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/10 11:17:27 by evarache         ###   ########lyon.fr   */
+/*   Updated: 2025/11/13 11:55:16 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include<stdio.h>
+#include "libft.h"
 //#include <string.h>
 
 void	*ft_memcpy( void *dest, const void *src, size_t n)
@@ -22,7 +22,7 @@ void	*ft_memcpy( void *dest, const void *src, size_t n)
 	i = 0;
 	dest_cast = (char *)dest;
 	src_cast = (char *)src;
-	if (dest == NULL || src == NULL)
+	if (dest == NULL && src == NULL)
 		return (NULL);
 	while (i < n)
 	{

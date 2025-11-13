@@ -3,27 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 16:01:42 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/10 20:37:22 by elsa             ###   ########.fr       */
+/*   Updated: 2025/11/13 11:55:42 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-/*
-int	ft_strlen(char *str)
-{
-	int	i;
+#include "libft.h"
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-*/
 char	*ft_strdup(const char *s1)
 {
 	char	*copy;

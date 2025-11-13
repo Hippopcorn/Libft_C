@@ -6,24 +6,12 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 11:35:48 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/10 11:35:49 by evarache         ###   ########lyon.fr   */
+/*   Updated: 2025/11/13 11:56:05 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
-#include <stdio.h>
-#include <bsd/string.h>
 
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}*/
+//#include <bsd/string.h>
+#include "libft.h"
 
 unsigned int	ft_strlcat(char *dst, const char *src, size_t size)
 {

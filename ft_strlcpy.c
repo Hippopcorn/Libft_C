@@ -6,32 +6,22 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 11:20:51 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/10 11:20:53 by evarache         ###   ########lyon.fr   */
+/*   Updated: 2025/11/13 11:56:23 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
-#include <stdio.h>
-#include <bsd/string.h>
 
-int	ft_strlen(char *src)
-{
-	int	length_src;
-
-	length_src = 0;
-	while (src[length_src] != '\0')
-	{
-		length_src++;
-	}
-	return (length_src);
-}*/
+//#include <bsd/string.h>
+#include "libft.h"
 
 unsigned int	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	unsigned int	i;
 	char			*src_cast;
+	int				result;
 
 	i = 0;
 	src_cast = (char *)src;
+	result = ft_strlen(src_cast);
 	if (size > 0)
 	{
 		while ((src_cast[i] != '\0') && (i < (size - 1)))
@@ -45,7 +35,7 @@ unsigned int	ft_strlcpy(char *dst, const char *src, size_t size)
 			i++;
 		}
 	}
-	return (ft_strlen(src_cast));
+	return (result);
 }
 /*
 int     main()

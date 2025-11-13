@@ -3,33 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 17:14:20 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/11 09:48:00 by elsa             ###   ########.fr       */
+/*   Updated: 2025/11/13 12:05:49 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <string.h>
-//#include <stdio.h>
-
-//void	ft_debug_tab(char tab[], int size);
+#include "libft.h"
 
 void	*ft_memset( void *s, int c, size_t n)
 {
 	unsigned char	*p;
 
-	p = s;
+	p = (unsigned char*)s;
 	while (n > 0)
 	{
-		*p = (char)c;
+		*p = c;
 		p++;
 		n--;
 	}
 	return (s);
 }
 
-/*
+/*fran
 int main(void)
 {
     char str[10];

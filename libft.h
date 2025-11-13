@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/13 12:11:23 by evarache          #+#    #+#             */
+/*   Updated: 2025/11/13 12:11:25 by evarache         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include<stdlib.h>
+#include <stdlib.h>
 #include <stdio.h>
 
 //typedef unsigned int size_t;  // https://en.wikipedia.org/wiki/C_data_types#stddef.h
@@ -33,13 +45,8 @@ void    *ft_calloc(size_t count, size_t size);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
-int	ft_get_index_start(char const *s1, char const *set);
-int	ft_get_index_end(char const *s1, char const *set);
-
-int ft_count_split(char const *s, char c);
-int ft_count_char(char const *s, char c, int i);
 char	**ft_split(char const *s, char c);
-
-int	ft_size(int n);
+char	*ft_itoa(int n);
+void ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif

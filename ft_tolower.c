@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/06 11:26:55 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 11:54:48 by evarache         ###   ########.fr       */
+/*   Created: 2025/11/10 14:36:17 by evarache          #+#    #+#             */
+/*   Updated: 2025/11/13 11:56:56 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int	ft_tolower(int c)
 {
-	if ((c >= '0' && c <= '9'))
-		return (1);
-	else
-		return (0);
+	if (c >= 'A' && c <= 'Z')
+		c += (97 - 65);
+	return (c);
 }
+/*
+#include <stdio.h>
+#include <ctype.h>
+int main()
+{
+    printf("%c\n", ft_tolower('o'));
+    printf("%c\n", tolower('o'));
+
+    return (0);
+}*/

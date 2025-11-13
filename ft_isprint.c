@@ -6,9 +6,11 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 13:40:22 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/07 13:40:24 by evarache         ###   ########lyon.fr   */
+/*   Updated: 2025/11/13 11:54:55 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

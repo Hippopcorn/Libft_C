@@ -6,9 +6,11 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 13:29:18 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/07 13:29:25 by evarache         ###   ########lyon.fr   */
+/*   Updated: 2025/11/13 11:54:09 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

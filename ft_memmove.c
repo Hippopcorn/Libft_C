@@ -6,7 +6,7 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 11:15:25 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/10 11:15:27 by evarache         ###   ########lyon.fr   */
+/*   Updated: 2025/11/13 12:00:26 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	dest_cast = dest;
 	src_cast = src;
 	i = 0;
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	if (dest_cast < src_cast)
 	{
 		while (i < n)
@@ -40,7 +42,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
+
+#include <string.h>
 int main(void) {
     char data1[] = "abcdef";
     char data2[] = "abcdef";
@@ -55,4 +58,4 @@ int main(void) {
     printf("Après memmove std (chevauchement) : %s\n", data2);
 
     return 0;
-}*/
+}

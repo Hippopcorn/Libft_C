@@ -6,11 +6,11 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 20:37:52 by elsa              #+#    #+#             */
-/*   Updated: 2025/11/12 13:00:22 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/13 11:54:30 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 // The calloc() function contiguously allocates enough space for count
 // objects that are size bytes of memory each and returns a pointer to the
