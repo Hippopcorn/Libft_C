@@ -6,7 +6,7 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 17:19:00 by elsa              #+#    #+#             */
-/*   Updated: 2025/11/17 14:09:43 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/17 15:29:22 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i++;
 	while (ft_strrchr(set, s1[j]))
 		j--;
-	return(ft_substr(s1, i, (j - i + 1)));
+	return (ft_substr(s1, i, (j - i + 1)));
 }
 
 // #include <string.h>
@@ -50,11 +50,4 @@ char	*ft_strtrim(char const *s1, char const *set)
 //     // printf("%s\n", str2);
 //     // char *str3 = ft_strtrim("loutre", "");  // 
 //     // printf("%s\n", str3);
-
-// 	char *s1 = "   \t  \n\n \t\t  \n\n\nHello \t  Please\n Trim me !\n   \n \n \t\t\n  ";
-//     char *s2 = "Hello \t  Please\n Trim me !";
-//     char *ret = ft_strtrim(s1, " \n\t");
-// 	printf("'%s'\n", ret);
-// 	    if (!strcmp(ret, s2))
-//                 printf("TEST PASSED\n");
 // }

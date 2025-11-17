@@ -6,14 +6,15 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:55:35 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 11:29:51 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/17 15:32:34 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
 
-// ft_memcmp compares byte string s1 against byte string s2. Both strings are assumed to be n bytes long.
+// ft_memcmp compares byte string s1 against byte string s2. 
+// Both strings are assumed to be n bytes long.
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -41,15 +42,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 // 	char	string2[] = "chaton";
 // 	printf("result = %d\n",ft_memcmp(string1, string2, 50));
 // 	printf("true fonction = %d\n",memcmp(string1, string2, 50));
-	
-
 // 	char *s11 = "\xff\xaa\xde\xffMACOSX\xff";
 // 	char *s22 = "\xff\xaa\xde\x02";
 // 	size_t size1 = 8;
 // 	printf("%d\n", ft_memcmp(s11, s22, size1));
 // 	printf("%d\n", memcmp(s11, s22, size1));
-	
-		
 // 	char *s1 = "\xff\xaa\xde\200";
 // 	char *s2 = "\xff\xaa\xde\0";
 // 	size_t size = 8;

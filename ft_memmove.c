@@ -6,13 +6,14 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 11:15:25 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 11:22:06 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/17 15:33:00 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// ft_memmove copies n bytes from string src to string dst. The two strings may overlap; the copy is always done in a non-destructive manner
+// ft_memmove copies n bytes from string src to string dst. The two strings 
+// may overlap; the copy is always done in a non-destructive manner
 // crash with paco even when directly calling memmove of lib
 
 void	*ft_memmove(void *dest, const void *src, size_t n)

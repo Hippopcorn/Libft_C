@@ -6,13 +6,15 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 16:01:42 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 13:27:50 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/17 15:28:43 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// ft_strdup returns a pointer to a new string which is a duplicate of the string s
+// ft_strdup returns a pointer to a new string which is a duplicate 
+// of the string s
+
 char	*ft_strdup(const char *s1)
 {
 	char	*copy;

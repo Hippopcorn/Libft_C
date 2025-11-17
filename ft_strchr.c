@@ -6,13 +6,15 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 14:51:38 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 15:05:24 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/17 15:34:03 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// ft_strchr returns a pointer to the first occurrence of the character c in the string s
+// ft_strchr returns a pointer to the first occurrence of the 
+// character c in the string s
+
 char	*ft_strchr(const char *s, int c)
 {
 	int		i;
@@ -53,19 +55,14 @@ char	*ft_strchr(const char *s, int c)
 // 	// printf("%s\n", ft_strchr("", '\0'));
 //     // printf("%s\n", strchr("", '\0'));
 // 	// printf("with paco error : \n");
-// 	// printf("%s\n", ft_strchr("there is so \0ma\0ny \0 \\0 in t\0his stri\0ng !\0\0\0\0", '\0'));
-//   	// printf("%s\n", strchr("there is so \0ma\0ny \0 \\0 in t\0his stri\0ng !\0\0\0\0", '\0'));
-
-// 	// char *src = "there is so \0ma\0ny \0 \\0 in t\0his stri\0ng !\0\0\0\0";
 //  	// char *d1 = strchr(src, '\0');
 //  	// char *d2 = ft_strchr(src, '\0');
- 
 //  	// if (d1 == d2)
 //  	// 	printf("OK");
 //  	// printf("pas ok");
 // 	// printf("d1 : %p", d1);
 // 	// printf("d2 : %p", d2);
-	
+
 // printf("%p\n", ft_strchr(0x55934e683020: "teste", 357: 'e'));
 // 	printf("%p\n", ft_strchr("teste",'\0'));
 //     return (0);

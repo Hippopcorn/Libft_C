@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 20:37:52 by elsa              #+#    #+#             */
-/*   Updated: 2025/11/16 17:38:18 by elsa             ###   ########.fr       */
+/*   Updated: 2025/11/17 15:31:41 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,12 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	size_t			i;
-    size_t          total;
+	size_t			total;
 	unsigned char	*mem;
-    
 
 	i = 0;
-    total = count * size;
-    mem = malloc(total);
+	total = count * size;
+	mem = malloc(total);
 	if (!mem)
 		return (NULL);
 	while (i < total)
@@ -36,7 +35,6 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (mem);
 }
-
 
 // #include <stdio.h>
 // int main()

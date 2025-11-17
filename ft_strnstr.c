@@ -6,15 +6,15 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:25:41 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 09:47:09 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/17 15:36:06 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-// ft_strnstr() function locates the first occurrence of the null-terminated string little in 
-// the string haystack, where not more than len characters are searched.
+// ft_strnstr() function locates the first occurrence of the 
+// null-terminated string little in the string haystack, where not 
+// more than len characters are searched.
 // Characters that appear after a ‘\0’ character are not searched.
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
@@ -73,7 +73,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 // 	char *Mon_resultat = ft_strnstr(text, mot, 9);
 
 //     printf("Mon_resultat : \"%s\"\n", Mon_resultat);
-	
+
 // 	char *s11 = "AAAAAAAAAAAAA";
 // 	size_t max = strlen(s11);
 // 	char *i1 = strnstr(s11, s11, max);
