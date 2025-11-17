@@ -3,19 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:25:41 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 07:43:43 by elsa             ###   ########.fr       */
+/*   Updated: 2025/11/17 09:47:09 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
+
 
 // ft_strnstr() function locates the first occurrence of the null-terminated string little in 
 // the string haystack, where not more than len characters are searched.
 // Characters that appear after a ‘\0’ character are not searched.
+
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	char			*big_cast;
@@ -28,59 +29,65 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	little_cast = (char *)little;
 	if (little[0] == '\0')
 		return (big_cast);
-	while (big_cast[i] != '\0' && i < len && ft_strlen(little) < len)
+	while (big_cast[i] && i < len && ft_strlen(little) <= len)
 	{
 		if (big_cast[i] == little_cast[0])
 		{
 			j = 0;
-			while (big_cast[i + j] == little_cast[j])
+			while (big_cast[i + j] == little_cast[j] && i + j < len)
 			{
-				j++;
-				if (little_cast[j] == '\0' || j == len - 1)
+				if (little_cast[j + 1] == '\0' || j == len - 1)
 					return (&big_cast[i]);
+				j++;
 			}
 		}
 		i++;
 	}
 	return (0);
 }
-/*
-char *strnstr(const char *haystack, const char *needle, size_t len) {
-    size_t i, j;
 
-    if (*needle == '\0')
-        return (char *)haystack;
+//#include <string.h>
+// char *strnstr(const char *haystack, const char *needle, size_t len) {
+//     size_t i, j;
 
-    for (i = 0; haystack[i] && i < len; i++) {
-        for (j = 0; needle[j] && i + j < 
-		len && haystack[i + j] == needle[j]; j++);
-        if (needle[j] == '\0')
-            return (char *)&haystack[i];
-    }
-    return NULL;
-}
-*/
-int main(void) {
-    // const char *text = "loutrela";
-    // const char *mot = "tre";
+//     if (*needle == '\0')
+//         return (char *)haystack;
 
-    // char *resultat_vrai = strnstr(text, mot, 9);
+//     for (i = 0; haystack[i] && i < len; i++) {
+//         for (j = 0; needle[j] && i + j < 
+// 		len && haystack[i + j] == needle[j]; j++);
+//         if (needle[j] == '\0')
+//             return (char *)&haystack[i];
+//     }
+//     return NULL;
+// }
 
-    // printf("resultat_vrai : \"%s\"\n", resultat_vrai);
+// int main(void) {
+//     const char *text = "loutrela";
+//     const char *mot = "tre";
 
-	// char *Mon_resultat = ft_strnstr(text, mot, 9);
+//     char *resultat_vrai = strnstr(text, mot, 9);
 
-    // printf("Mon_resultat : \"%s\"\n", Mon_resultat);
+//     printf("resultat_vrai : \"%s\"\n", resultat_vrai);
+
+// 	char *Mon_resultat = ft_strnstr(text, mot, 9);
+
+//     printf("Mon_resultat : \"%s\"\n", Mon_resultat);
 	
-	 char *s1 = "AAAAAAAAAAAAA";
-        size_t max = strlen(s1);
-        char *i1 = strnstr(s1, s1, max);
-        char *i2 = ft_strnstr(s1, s1, max);
-		printf("fct: %s\n", i1);
-		printf("moi :%s\n", i2);
- 
-        if (i1 == i2)
-                printf("test ok");
-        printf("test pas ok");
-  
-}
+// 	char *s11 = "AAAAAAAAAAAAA";
+// 	size_t max = strlen(s11);
+// 	char *i1 = strnstr(s11, s11, max);
+// 	char *i2 = ft_strnstr(s11, s11, max);
+// 	printf("fct: %s\n", i1);
+// 	printf("moi :%s\n", i2);
+
+// 	if (i1 == i2)
+// 			printf("test ok\n");
+// 	printf("test pas ok\n");
+
+// 	char *s1 = "MZIRIBMZIRIBMZE123";
+// 	char *s2 = "MZIRIBMZE";
+// 	size_t max2 = strlen(s2);
+// 	printf("%s\n", strnstr(s1, s2, max2));
+// 	printf("%s\n", ft_strnstr(s1, s2, max2));
+//  }

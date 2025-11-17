@@ -6,7 +6,7 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:40:33 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 11:55:01 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/17 15:10:18 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char			*s_cast;
+	unsigned char	*s_cast;
 	unsigned int	i;
 
-	s_cast = (char *)s;
+	s_cast = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{
-		if (s_cast[i] == c)
+		if (s_cast[i] == (unsigned char)c)
 		{
 			return (&s_cast[i]);
 		}

@@ -6,7 +6,7 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 11:30:33 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 10:40:23 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/17 15:24:44 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,6 @@ char	**ft_split(char const *s, char c)
 	tab[i_tab] = NULL;
 	return (tab);
 }
-/*
 #include <stdio.h>
 int main()
 {
@@ -105,12 +104,12 @@ int main()
 	// printf("%d\n", ft_count_split("", 'i'));  //  0
 
 	//printf("%d\n", ft_count_char("oiooooiooooodiioooooi", 'i', 0)); //6
-
+	char **test = ft_split("^^^1^^2a,^^^^3^^^^--h^^^^",'^');
 	int i = 0;
-	char **test = ft_split("loutreoochevalooloup", 'o');
+	//char **test = ft_split("loutreoochevalooloup", 'o');
 	while (test[i])
 	{
 		printf("%s\n", test[i]);
 		i++;
 	}
-}*/
+}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 16:39:00 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 17:27:36 by elsa             ###   ########.fr       */
+/*   Updated: 2025/11/17 14:21:06 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	ft_size(int n)
 	}
 	else
 		len = 1;
-	while (long_n > 10)
+	while (long_n > 9)
 	{
 		len++;
 		long_n /= 10;
@@ -51,10 +51,10 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 		long_n = -long_n;
 	}
-	str[size--] = '\0';
+	size--;
 	if (long_n == 0)
 		str[size] = '0';
-	while (long_n > 1)
+	while (long_n > 0)
 	{
 		str[size--] = (long_n % 10) + 48;
 		long_n /= 10;
@@ -62,11 +62,12 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-int	main(void)
-{
-	printf("%s\n", ft_itoa(-2147483648));
-	printf("%s\n", ft_itoa(2147483647));
-	printf("%s\n", ft_itoa(0));
-	printf("%s\n", ft_itoa(42));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%s\n", ft_itoa(-2147483648));
+// 	printf("%s\n", ft_itoa(-214748));
+// 	printf("%s\n", ft_itoa(2147483647));
+// 	printf("%s\n", ft_itoa(0));
+// 	printf("%s\n", ft_itoa(10));
+// 	return (0);
+// }
