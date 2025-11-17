@@ -6,7 +6,7 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 11:30:33 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 15:24:44 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/17 16:29:07 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	ft_count_split(char const *s, char c)
 	count = 0;
 	while (s[i])
 	{
-		if (s[i] != c && (s[i - 1] == c || i == 0))
+		if (s[i] != c && (i == 0 || s[i - 1] == c))
 			count++;
 		i++;
 	}
@@ -85,31 +85,32 @@ char	**ft_split(char const *s, char c)
 		if (s[i] != c && (s[i - 1] == c || i == 0))
 		{
 			tab[i_tab] = ft_make_substr(s, c, i);
+			if (tab[i_tab] == NULL)
+				free(tab);
 			i_tab++;
 		}
 		i++;
 	}
-	i_tab++;
 	tab[i_tab] = NULL;
 	return (tab);
 }
-#include <stdio.h>
-int main()
-{
-	// printf("%d\n", ft_count_split("oooooiooooodiioooooi", 'i')); // 3
-	// printf("%d\n", ft_count_split("iooooodiioooooiiio", 'i'));  // 3
-	// printf("%d\n", ft_count_split("oiooooodiioooooiiio", 'i'));  // 4
-	// printf("%d\n", ft_count_split("oooooiooooodiioooooiiioi", 'i'));  // 4
-	// printf("%d\n", ft_count_split("iiii", 'i'));  //  0
-	// printf("%d\n", ft_count_split("", 'i'));  //  0
+// #include <stdio.h>
+// int main()
+// {
+// 	// printf("%d\n", ft_count_split("oooooiooooodiioooooi", 'i')); // 3
+// 	// printf("%d\n", ft_count_split("iooooodiioooooiiio", 'i'));  // 3
+// 	// printf("%d\n", ft_count_split("oiooooodiioooooiiio", 'i'));  // 4
+// 	// printf("%d\n", ft_count_split("oooooiooooodiioooooiiioi", 'i'));  // 4
+// 	// printf("%d\n", ft_count_split("iiii", 'i'));  //  0
+// 	// printf("%d\n", ft_count_split("", 'i'));  //  0
 
-	//printf("%d\n", ft_count_char("oiooooiooooodiioooooi", 'i', 0)); //6
-	char **test = ft_split("^^^1^^2a,^^^^3^^^^--h^^^^",'^');
-	int i = 0;
-	//char **test = ft_split("loutreoochevalooloup", 'o');
-	while (test[i])
-	{
-		printf("%s\n", test[i]);
-		i++;
-	}
-}
+// 	//printf("%d\n", ft_count_char("oiooooiooooodiioooooi", 'i', 0)); //6
+// 	char **test = ft_split("^^^1^^2a,^^^^3^^^^--h^^^^",'^');
+// 	int i = 0;
+// 	//char **test = ft_split("loutreoochevalooloup", 'o');
+// 	while (test[i])
+// 	{
+// 		printf("%s\n", test[i]);
+// 		i++;
+// 	}
+// }
