@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 20:37:52 by elsa              #+#    #+#             */
-/*   Updated: 2025/11/13 11:54:30 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/16 17:38:18 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,16 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	size_t			i;
+    size_t          total;
 	unsigned char	*mem;
+    
 
 	i = 0;
-	mem = malloc(count * size);
+    total = count * size;
+    mem = malloc(total);
 	if (!mem)
 		return (NULL);
-	while (i < count)
+	while (i < total)
 	{
 		mem[i] = 0;
 		i++;
@@ -34,21 +37,21 @@ void	*ft_calloc(size_t count, size_t size)
 	return (mem);
 }
 
-/*
-#include <stdio.h>
-int main()
-{
-    char **monAlloc = ft_calloc(3, sizeof(char*));
-    printf("%p\n", monAlloc);
-    for (int i = 0; i < 3; i++)
-    {
-        printf("%p\n", monAlloc[i]);
-    }
-    printf("\n");
 
-    char **alloc = calloc(3, sizeof(char*));
-    for (int i = 0; i < 3; i++)
-    {
-        printf("%p\n", alloc[i]);
-    }
-}*/
+// #include <stdio.h>
+// int main()
+// {
+//     char **monAlloc = ft_calloc(0, sizeof(char*));
+//     printf("%p\n", monAlloc);
+//     for (int i = 0; i < 3; i++)
+//     {
+//         printf("%p\n", monAlloc[i]);
+//     }
+//     printf("\n");
+
+//     char **alloc = calloc(0, sizeof(char*));
+//     for (int i = 0; i < 3; i++)
+//     {
+//         printf("%p\n", alloc[i]);
+//     }
+// }

@@ -3,15 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:25:41 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 11:56:39 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/17 07:43:43 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
+// ft_strnstr() function locates the first occurrence of the null-terminated string little in 
+// the string haystack, where not more than len characters are searched.
+// Characters that appear after a ‘\0’ character are not searched.
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	char			*big_cast;
@@ -55,17 +59,28 @@ char *strnstr(const char *haystack, const char *needle, size_t len) {
     }
     return NULL;
 }
-
+*/
 int main(void) {
-    const char *text = "loutrela";
-    const char *mot = "tre";
+    // const char *text = "loutrela";
+    // const char *mot = "tre";
 
-    char *resultat_vrai = strnstr(text, mot, 9);
+    // char *resultat_vrai = strnstr(text, mot, 9);
 
-    printf("resultat_vrai : \"%s\"\n", resultat_vrai);
+    // printf("resultat_vrai : \"%s\"\n", resultat_vrai);
 
-	char *Mon_resultat = ft_strnstr(text, mot, 9);
+	// char *Mon_resultat = ft_strnstr(text, mot, 9);
 
-    printf("Mon_resultat : \"%s\"\n", Mon_resultat);
+    // printf("Mon_resultat : \"%s\"\n", Mon_resultat);
+	
+	 char *s1 = "AAAAAAAAAAAAA";
+        size_t max = strlen(s1);
+        char *i1 = strnstr(s1, s1, max);
+        char *i2 = ft_strnstr(s1, s1, max);
+		printf("fct: %s\n", i1);
+		printf("moi :%s\n", i2);
+ 
+        if (i1 == i2)
+                printf("test ok");
+        printf("test pas ok");
   
-}*/
+}

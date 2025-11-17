@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 16:39:00 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 09:56:44 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/13 17:27:36 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,11 +38,9 @@ static int	ft_size(int n)
 char	*ft_itoa(int n)
 {
 	char	*str;
-	int		i_str;
 	long	long_n;
 	size_t	size;
 
-	i_str = 0;
 	long_n = n;
 	size = ft_size(n);
 	str = ft_calloc(size + 1, sizeof(char));

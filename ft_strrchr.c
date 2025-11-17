@@ -3,37 +3,50 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:12:40 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 11:56:45 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/16 15:46:50 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// ft_strrchr locates the last occurence of c in s.
+// crash with paco even when directly calling strrchr of lib
 char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
-	char	*s_cast;
-
-	s_cast = (char *)s;
-	i = ft_strlen(s_cast);
+		
+	i = (ft_strlen(s) - 1);
+	
+	if (c == '\0')
+		return ((char *)s + ft_strlen(s));
 	while (i >= 0)
 	{
-		if (c == s_cast[i])
-			return (&s_cast[i]);
+		if (c == s[i])
+			return ((char *)s + i);
 		i--;
 	}
 	return (0);
 }
 
-/*
-#include <string.h>
-int main()
-{
-    printf("%s\n", ft_strrchr("ochatn", 'o'));
-    printf("%s\n", strrchr("ochatnn", 'o'));
+//#include <string.h>
+// int main()
+// {
+//     // printf("%d\n", ft_strrchr("\0", '\0'));
+//     // printf("%d\n", strrchr("\0", '\0'));
+// 	// char *src = "ane";
 
-    return (0);
-}*/
+// 	// printf("%p\n", ft_strrchr(src, '\0'));
+// 	// //printf("%c\n", ft_strrchr(src, '\0'));
+//     // printf("%p\n", strrchr(src, '\0'));
+//     // //printf("%c\n", strrchr(src, '\0'));
+ 	
+// 	char *src1 = "there is so \0ma\0ny \0 \\0 in t\0his stri\0ng !\0\0\0\0";
+//     printf("%p\n", strrchr(src1, '\0'));
+//     printf("%p\n", ft_strrchr(src1, '\0'));
+	
+
+//     return (0);
+// }

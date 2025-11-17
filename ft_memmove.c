@@ -3,14 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 11:15:25 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 16:14:54 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/16 18:24:23 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
+
+
+// ft_memmove copies n bytes from string src to string dst. The two strings may overlap; the copy is always done in a non-destructive manner
+// crash with paco even when directly calling memmove of lib
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
@@ -21,12 +26,15 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	dest_cast = dest;
 	src_cast = src;
 	i = 0;
-	if (dest == NULL && src == NULL)
+	if (dest == NULL || src == NULL)
 		return (NULL);
 	if (dest_cast < src_cast)
 	{
 		while (i < n)
-			dest_cast[i] = src_cast[i++];
+		{
+			dest_cast[i] = src_cast[i];
+			i++;
+		}
 	}
 	else if (dest_cast > src_cast)
 	{
@@ -38,21 +46,34 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		}
 	}
 	return (dest);
+	return (memmove(dest, src, n));
 }
-/*
-#include <string.h>
-int main(void) {
-    char data1[] = "abcdef";
-    char data2[] = "abcdef";
 
-    printf("Avant : data1 = %s, data2 = %s\n", data1, data2);
+// #include <string.h>
+// int main(void) {
+//     char data1[] = "abcdef";
+//     char data2[] = "abcdef";
 
-    // Test sans chevauchement
-    ft_memmove(data1, data1, 2);
-    printf("Après ft_memmove  (chevauchement) : %s\n", data1);
+//     printf("Avant : data1 = %s, data2 = %s\n", data1, data2);
 
-    memmove(data2, data2, 2);
-    printf("Après memmove std (chevauchement) : %s\n", data2);
+//     // Test sans chevauchement
+//     ft_memmove(data1, data1, 2);
+//     printf("Après ft_memmove  (chevauchement) : %s\n", data1);
 
-    return 0;
-}*/
+//     memmove(data2, data2, 2);
+//     printf("Après memmove std (chevauchement) : %s\n", data2);
+
+// 	int size = 10;
+// 	char *dst = electric_alloc(size);
+// 	char *data = electric_alloc(size);
+
+// 	__builtin___memset_chk (data, 'A', size, __builtin_object_size (data, 0));
+// 	ft_memmove(dst, data, size);
+// 	dst = electric_alloc_rev(size);
+// 	data = electric_alloc_rev(size);
+// 	__builtin___memset_chk (data, 'A', size, __builtin_object_size (data, 0));
+// 	ft_memmove(dst, data, size);
+// 	exit(TEST_SUCCESS);
+
+//     return 0;
+// }
