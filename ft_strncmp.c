@@ -6,13 +6,13 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:27:55 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 15:35:07 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/18 16:16:07 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// compare two strings until n
+// ft_strncmp compare two strings until n
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

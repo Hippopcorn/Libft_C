@@ -6,11 +6,10 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 11:35:48 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 11:56:05 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/18 16:15:38 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <bsd/string.h>
 #include "libft.h"
 
 unsigned int	ft_strlcat(char *dst, const char *src, size_t size)
@@ -37,6 +36,7 @@ unsigned int	ft_strlcat(char *dst, const char *src, size_t size)
 	return (len_dest + len_src);
 }
 /*
+#include <bsd/string.h>
 int	main()
 {
 	char	my_src[] = "lechaton";

@@ -6,14 +6,14 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 17:19:00 by elsa              #+#    #+#             */
-/*   Updated: 2025/11/17 15:29:22 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/18 16:17:28 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Allocates memory (using malloc(3)) and returns a copy of ’s1’ with 
-// characters from ’set’ removed from the beginning and the end.
+// ft_strtrim allocates memory (using malloc(3)) and returns a copy of ’s1’ 
+// with characters from ’set’ removed from the beginning and the end.
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

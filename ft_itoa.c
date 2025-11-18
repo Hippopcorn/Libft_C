@@ -6,12 +6,13 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 16:39:00 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 14:21:06 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/18 16:11:46 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// ft_itoa convert integer to a srting
 // cast n to long for the int min case
 
 static int	ft_size(int n)

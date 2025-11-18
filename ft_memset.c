@@ -6,11 +6,14 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 17:14:20 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 16:13:16 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/18 16:14:10 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// ft_memset fills the first n bytes of the memory area pointed to 
+// by s with the constant byte c.
 
 void	*ft_memset( void *s, int c, size_t n)
 {

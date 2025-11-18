@@ -6,13 +6,13 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:25:41 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 15:36:06 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/18 16:16:16 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// ft_strnstr() function locates the first occurrence of the 
+// ft_strnstr locates the first occurrence of the 
 // null-terminated string little in the string haystack, where not 
 // more than len characters are searched.
 // Characters that appear after a ‘\0’ character are not searched.
