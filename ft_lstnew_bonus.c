@@ -6,7 +6,7 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 09:51:40 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/18 15:43:07 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/18 16:37:40 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*p_new_node;
 
-	p_new_node = calloc(1, sizeof(t_list));
+	p_new_node = malloc(sizeof(t_list));
 	if (!p_new_node)
 		return (NULL);
 	p_new_node -> content = content;
