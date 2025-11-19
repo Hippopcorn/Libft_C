@@ -6,7 +6,7 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 11:15:25 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 15:33:00 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:07:40 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (dest == NULL || src == NULL)
+	if (dest == NULL && src == NULL)
 		return (NULL);
 	if (dest < src)
 	{

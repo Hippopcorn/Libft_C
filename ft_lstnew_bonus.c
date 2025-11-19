@@ -6,7 +6,7 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 09:51:40 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/18 16:37:40 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/19 09:36:59 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,4 @@ t_list	*ft_lstnew(void *content)
 //     t_list *l = ft_lstnew(data);
 // 	printf("%p\n", data);
 // 	printf("%p\n", l->content);
-//     if (!l)
-//         printf("test ok");
-//      printf("test pas ok");
 // }

@@ -6,7 +6,7 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 12:11:23 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/18 16:20:08 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:02:40 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+# include <stdio.h>
 # include <unistd.h>
+#include <limits.h>
 
 typedef struct s_list
 {

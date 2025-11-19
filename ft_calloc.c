@@ -6,7 +6,7 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 20:37:52 by elsa              #+#    #+#             */
-/*   Updated: 2025/11/18 16:11:58 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:03:05 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,18 @@
 // allocated memory.  The allocated memory is filled with bytes of value
 // zero.
 
-void	*ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t			i;
 	size_t			total;
 	unsigned char	*mem;
 
 	i = 0;
-	total = count * size;
+	if (nmemb == 0 || size == 0)
+		return (malloc(1));
+	if (size > INT_MAX / nmemb)
+		return (NULL);
+	total = nmemb * size;
 	mem = malloc(total);
 	if (!mem)
 		return (NULL);
