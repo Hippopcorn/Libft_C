@@ -6,11 +6,9 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 14:17:04 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 11:54:44 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:15:41 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isascii(int c)
 {

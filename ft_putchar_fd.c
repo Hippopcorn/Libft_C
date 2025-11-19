@@ -6,12 +6,11 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 18:24:06 by elsa              #+#    #+#             */
-/*   Updated: 2025/11/17 14:43:35 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:24:53 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
 
 void	ft_putchar_fd(char c, int fd)
 {

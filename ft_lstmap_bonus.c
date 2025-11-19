@@ -6,7 +6,7 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 14:54:58 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/18 16:57:06 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/19 17:16:19 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,16 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_list;
 	t_list	*current;
 
-	current = calloc(1, sizeof(t_list));
-	if (!lst || !del || !current)
+	if (!lst || !del)
+		return (NULL);
+	current = ft_calloc(1, sizeof(t_list));
+	if (!current)
 		return (NULL);
 	current->content = f(lst->content);
 	new_list = current;
 	while (lst->next)
 	{
-		new_list->next = calloc(1, sizeof(t_list));
+		new_list->next = ft_calloc(1, sizeof(t_list));
 		if (!new_list->next)
 			return (NULL);
 		new_list = new_list->next;

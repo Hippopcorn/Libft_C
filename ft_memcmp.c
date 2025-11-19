@@ -6,12 +6,11 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:55:35 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 15:32:34 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:17:25 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 // ft_memcmp compares byte string s1 against byte string s2. 
 // Both strings are assumed to be n bytes long.
@@ -36,6 +35,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
+// #include <string.h>
 // int	main()
 // {
 // 	char	string1[] = "lapin";

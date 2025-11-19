@@ -6,11 +6,9 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 10:42:10 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/18 16:15:08 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:26:56 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 // ft_striteri applies the function ’f’ to each character of the
 // string passed as argument, passing its index as
@@ -29,11 +27,12 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 }
 
+/*
 void	ft_replace(unsigned int i, char *str)
 {
 	str[i] = 'i';
 }
-/*
+
 int	main()
 {
 	char *str = "chat";

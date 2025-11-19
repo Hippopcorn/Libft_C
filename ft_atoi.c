@@ -6,11 +6,9 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 13:29:18 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/18 16:18:37 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:14:55 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 // ft_atoi function converts the initial portion of the string pointed to 
 // by nptr to int.

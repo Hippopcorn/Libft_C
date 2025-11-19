@@ -6,11 +6,9 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 11:26:55 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 11:54:48 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:15:44 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isdigit(int c)
 {

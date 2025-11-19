@@ -6,11 +6,9 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 14:36:17 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/13 11:56:56 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:29:27 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_tolower(int c)
 {

@@ -6,7 +6,7 @@
 /*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 11:30:33 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 16:29:07 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/19 16:59:01 by evarache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,16 @@ static char	*ft_make_substr(char const *s, char c, int i)
 	return (substr);
 }
 
+static void	ft_free_tab(int i, char **tab)
+{
+	while (i >= 0)
+	{
+		free(tab[i]);
+		i--;
+	}
+	free(tab);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**tab;
@@ -86,7 +96,10 @@ char	**ft_split(char const *s, char c)
 		{
 			tab[i_tab] = ft_make_substr(s, c, i);
 			if (tab[i_tab] == NULL)
-				free(tab);
+			{
+				ft_free_tab(i_tab, tab);
+				return (NULL);
+			}
 			i_tab++;
 		}
 		i++;
@@ -94,6 +107,7 @@ char	**ft_split(char const *s, char c)
 	tab[i_tab] = NULL;
 	return (tab);
 }
+
 // #include <stdio.h>
 // int main()
 // {
