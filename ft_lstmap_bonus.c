@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 14:54:58 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/19 17:16:19 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/20 10:56:33 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,24 +20,21 @@
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;
-	t_list	*current;
+	t_list	*new_elem;
 
-	if (!lst || !del)
+	if (!lst || !del || !f)
 		return (NULL);
-	current = ft_calloc(1, sizeof(t_list));
-	if (!current)
-		return (NULL);
-	current->content = f(lst->content);
-	new_list = current;
-	while (lst->next)
+	new_list = NULL;
+	while (lst)
 	{
-		new_list->next = ft_calloc(1, sizeof(t_list));
-		if (!new_list->next)
+		new_elem = ft_lstnew(f(lst->content));
+		if (!new_elem)
+		{
+			ft_lstclear(&new_list, del);
 			return (NULL);
-		new_list = new_list->next;
+		}
+		ft_lstadd_back(&new_list, new_elem);
 		lst = lst->next;
-		new_list->content = f(lst->content);
 	}
-	new_list->next = NULL;
-	return (current);
+	return (new_list);
 }
