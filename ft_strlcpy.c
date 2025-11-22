@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 11:20:51 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/18 16:15:34 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/22 09:52:39 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// same behavior than strncopy but more safely
 
 unsigned int	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -36,20 +38,3 @@ unsigned int	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (result);
 }
-/*
-#include <bsd/string.h>
-int     main()
-{
-        char    str_src[] = "Loutre";
-        char    str_dest[] = "Panthere";
-        char    str_src2[] = "Loutre";
-        char    str_dest2[] = "Panthere";
-
-        printf("Ma fonction : taille de src =  %u caracteres\n",
-        ft_strlcpy(str_dest, str_src, 3));
-		printf ("src : %s, dest : %s\n", str_src, str_dest);
-        printf("fonction officielle : taille de src = %zu caracteres\n",
-        strlcpy(str_dest2, str_src2, 3));
-		printf ("src2 : %s, dest2 : %s\n", str_src2, str_dest2);
-        return (0);
-}*/

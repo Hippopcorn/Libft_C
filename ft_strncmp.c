@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:27:55 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/19 11:29:13 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/22 09:53:02 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,23 +33,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	diff = us1[i] - us2[i];
 	return (diff);
 }
-
-// #include <string.h>
-// int	main()
-// {
-// 	// char	*string1 = "chat";
-// 	// char	*string2 = "chav";
-// 	printf("result = %d\n",ft_strncmp("abcdef", "abcdefghijklmnop", 6));
-// 	printf("true fonction = %d\n",strncmp("abcdef", "abcdefghijklmnop", 6));
-// 	// printf("\n");
-// 	// //printf("result = %d\n",ft_strncmp("", "chat", 10));
-// 	// printf("true fonction = %d\n",strncmp("chat", "chav", 4));
-// 	// // printf("\n");
-// 	// // printf("result = %d\n",ft_strncmp("chat", "", 10));
-// 	// printf("true fonction = %d\n",strncmp("chat", "", 10));
-// 	if (i1 == i2)
-// 		printf("ok");
-// 	else
-// 		printf("pas ok");
-// 	return (0);
-// }

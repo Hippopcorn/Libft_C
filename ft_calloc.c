@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 20:37:52 by elsa              #+#    #+#             */
-/*   Updated: 2025/11/19 11:03:05 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/22 09:27:08 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,21 +39,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	}
 	return (mem);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-//     char **monAlloc = ft_calloc(0, sizeof(char*));
-//     printf("%p\n", monAlloc);
-//     for (int i = 0; i < 3; i++)
-//     {
-//         printf("%p\n", monAlloc[i]);
-//     }
-//     printf("\n");
-
-//     char **alloc = calloc(0, sizeof(char*));
-//     for (int i = 0; i < 3; i++)
-//     {
-//         printf("%p\n", alloc[i]);
-//     }
-// }

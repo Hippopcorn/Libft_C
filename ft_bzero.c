@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 18:32:03 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/19 11:15:18 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/22 09:25:46 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,3 @@ void	ft_bzero(void *s, size_t n)
 		n--;
 	}
 }
-
-/*
-#include <string.h
-int main(void)
-{
-    char str[10] = "loutre";
-
-    ft_bzero(str, 3);
-	printf("Mon resultat : %s\n", str);  
-	bzero(str, 3);
-
-    printf("Resultat : %s\n", str);  
-    return 0;
-}*/

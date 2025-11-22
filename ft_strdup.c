@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 16:01:42 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 15:28:43 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/22 09:30:47 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,26 +34,3 @@ char	*ft_strdup(const char *s1)
 	copy[i] = '\0';
 	return (copy);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int	main()
-{
-	char *my_src;
-	char *dest;
-	my_src = "kjuhhihifdbdfhbdfhbdfhdfvhdfhb";
-	dest = ft_strdup(my_src); 
-	printf("Mon dest : %s\n", dest);
-
-	char *my_src2;
-	char *dest2;
-	my_src2 = "kjuhhihifdbdfhbdfhbdfhdfvhdfhb";
-	dest2 = strdup(my_src2); 
-	printf("Dest officiel : %s\n", dest2);
-	free(dest);
-	free(dest2);
-	
-	return (0);
-}
-*/

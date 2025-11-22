@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 12:33:19 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/18 15:44:32 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/22 09:27:40 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,20 +22,3 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
-
-// int main()
-// {
-//     t_list list[5];
-//     int values[5] = {0, 1, 2, 3, 4};
-
-//     for (int i = 0; i < 5; i++)
-//     {
-//         list[i].content = &values[i];
-//         list[i].next = (i < 4) ? &list[i + 1] : NULL;
-//     }
-
-//     t_list *last = ft_lstlast(list);
-//     printf("%d\n", *(int *)last->content);  // prints 4
-
-//     return 0;
-// }

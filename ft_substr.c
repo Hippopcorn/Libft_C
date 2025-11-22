@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 14:58:56 by elsa              #+#    #+#             */
-/*   Updated: 2025/11/18 16:16:52 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/22 09:53:54 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,28 +44,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substring[i] = '\0';
 	return (substring);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// // 	char *str = "01234";
-// //     size_t size = 10;
-// //     printf("%s\n", ft_substr(str, 10, size));
-//     // char *str = "chatonloutre";
-//     // char *substr = ft_substr(str, 6, 10);
-//     // printf("%s\n", substr);
-// 	char *str = "01234";
-// 	size_t size = 10;
-// 	char *ret = ft_substr(str, 10, size);
-
-// 	if (!ft_strncmp(ret, "", 1))
-// 	{
-// 			free(ret);
-// 			printf("TEST_OK\n");
-// 	}
-// 	free(ret);
-// 	printf("TEST_KO\n");
-// }
-
-// si s < n on alloue quand même un tableau de la taille de len
-// mais la substring s'arrête a la fin de s

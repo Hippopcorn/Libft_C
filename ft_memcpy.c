@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 11:17:22 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/19 11:17:48 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/22 09:28:21 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,23 +34,3 @@ void	*ft_memcpy( void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*
-int main(void)
-{
-    char *str1;
-	char *str2;
-
-	str1 = calloc(20, sizeof(char));
-	str2 = calloc(20, sizeof(char));
-
-    ft_memcpy(str1, "chien", 5);
-	ft_memcpy(str1 + 5, "lapin", 5);
-	printf("Mon résultat : %s\n", str1);
-
-    memcpy(str2, "chien", 6);
-	memcpy(str2 + 5, "lapin", 6);
-
-    printf("Résultat : %s\n", str1);
-    return 0;
-}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 11:30:33 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/19 16:59:01 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/22 09:30:21 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,24 +107,3 @@ char	**ft_split(char const *s, char c)
 	tab[i_tab] = NULL;
 	return (tab);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	// printf("%d\n", ft_count_split("oooooiooooodiioooooi", 'i')); // 3
-// 	// printf("%d\n", ft_count_split("iooooodiioooooiiio", 'i'));  // 3
-// 	// printf("%d\n", ft_count_split("oiooooodiioooooiiio", 'i'));  // 4
-// 	// printf("%d\n", ft_count_split("oooooiooooodiioooooiiioi", 'i'));  // 4
-// 	// printf("%d\n", ft_count_split("iiii", 'i'));  //  0
-// 	// printf("%d\n", ft_count_split("", 'i'));  //  0
-
-// 	//printf("%d\n", ft_count_char("oiooooiooooodiioooooi", 'i', 0)); //6
-// 	char **test = ft_split("^^^1^^2a,^^^^3^^^^--h^^^^",'^');
-// 	int i = 0;
-// 	//char **test = ft_split("loutreoochevalooloup", 'o');
-// 	while (test[i])
-// 	{
-// 		printf("%s\n", test[i]);
-// 		i++;
-// 	}
-// }

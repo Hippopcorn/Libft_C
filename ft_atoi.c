@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 13:29:18 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/19 11:14:55 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/22 09:25:31 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,25 +41,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (sign * result);
 }
-
-/*
-#include <stdlib.h>
-#include <stdio.h>
-int	main()	
-{
-	 char * nb;
-    int nb_convert;
-    int nb_convertTrue;
-
-    nb = "+46468   ";
-    nb_convert = ft_atoi(nb);
-    nb_convertTrue = atoi(nb);
-
-    printf("%d\n", nb_convert);
-    printf("%d\n", nb_convertTrue);
-
-    return (0);
-}*/
-
-// modif la foncion pour accepter en entree '      48' ou '    -5' 
-// mais pas plusieurs signes

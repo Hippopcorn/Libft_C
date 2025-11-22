@@ -3,21 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 11:35:48 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/18 16:15:38 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/22 09:42:02 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_strlcat(char *dst, const char *src, size_t size)
+// same behavior than strncat but more safely
+
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	unsigned int	len_dest;
 	unsigned int	len_src;
 	char			*src_cast;
-	unsigned int	i;
+	size_t			i;
 
 	src_cast = (char *)src;
 	len_src = ft_strlen(src_cast);
@@ -35,18 +37,3 @@ unsigned int	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[len_dest + i] = '\0';
 	return (len_dest + len_src);
 }
-/*
-#include <bsd/string.h>
-int	main()
-{
-	char	my_src[] = "lechaton";
-	char	my_dest[5] = "ioi";
-	char    my_src2[] = "lechaton";
-        char    my_dest2[5] = "ioi";
-
-	printf("my fonction result : %d\n",ft_strlcat(my_dest, my_src, 15));
-	printf("result dest : %s\n", my_dest);
-	printf("official fonction result : %zu\n",strlcat(my_dest2, my_src2, 15));
-	printf("result dest2 : %s\n", my_dest2);
-	return (0);
-}*/

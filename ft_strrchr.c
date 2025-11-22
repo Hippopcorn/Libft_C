@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:12:40 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/17 15:36:38 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/22 09:53:35 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,22 +29,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-
-//#include <string.h>
-// int main()
-// {
-//     // printf("%d\n", ft_strrchr("\0", '\0'));
-//     // printf("%d\n", strrchr("\0", '\0'));
-// 	// char *src = "ane";
-
-// 	// printf("%p\n", ft_strrchr(src, '\0'));
-// 	// //printf("%c\n", ft_strrchr(src, '\0'));
-//     // printf("%p\n", strrchr(src, '\0'));
-//     // //printf("%c\n", strrchr(src, '\0'));
-
-// 	char *src1 = "there is so \0ma\0ny \0 \\0 in t\0his stri\0ng !\0\0\0\0";
-//     printf("%p\n", strrchr(src1, '\0'));
-//     printf("%p\n", ft_strrchr(src1, '\0'));
-
-//     return (0);
-// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evarache <evarache@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: elsa <elsa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 09:51:40 by evarache          #+#    #+#             */
-/*   Updated: 2025/11/19 09:36:59 by evarache         ###   ########.fr       */
+/*   Updated: 2025/11/22 09:27:49 by elsa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,3 @@ t_list	*ft_lstnew(void *content)
 	p_new_node -> next = NULL;
 	return (p_new_node);
 }
-
-// int	main()
-// {
-// 	char *data = "hello, i'm a data";
-
-//     t_list *l = ft_lstnew(data);
-// 	printf("%p\n", data);
-// 	printf("%p\n", l->content);
-// }
